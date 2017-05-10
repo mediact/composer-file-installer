@@ -23,13 +23,25 @@
   ],
   "require": {
     "php": "^7.0",
-    "composer-plugin-api": "^1.1"
+    "composer-plugin-api": "^1.1",
+    "mediact/file-mapping": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "@stable",
     "kint-php/kint": "@stable",
     "mediact/testing-suite": "@stable",
-    "composer/composer": "@stable"
+    "composer/composer": "@stable",
+    "mikey179/vfsstream": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mediact\\Composer\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Mediact\\Composer\\Tests\\": "tests"
+    }
   },
   "archive": {
     "exclude": [
