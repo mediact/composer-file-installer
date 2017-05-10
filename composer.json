@@ -1,0 +1,44 @@
+{
+  "name": "mediact/composer-file-installer",
+  "description": "Install files with Composer.",
+  "type": "library",
+  "license": "proprietary",
+  "prefer-stable": true,
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "MediaCT B.V.",
+      "email": "contact@mediact.nl"
+    },
+    {
+      "name": "Jan-Marten de Boer",
+      "role": "developer"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.mediact.nl"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "composer-plugin-api": "^1.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable",
+    "kint-php/kint": "@stable",
+    "mediact/testing-suite": "@stable",
+    "composer/composer": "@stable"
+  },
+  "archive": {
+    "exclude": [
+      "tests",
+      "phpcs.xml",
+      "phpmd.xml",
+      "phpunit.xml",
+      "bitbucket-pipelines.yml",
+      ".gitignore"
+    ]
+  }
+}
