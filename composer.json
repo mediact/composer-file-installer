@@ -2,7 +2,7 @@
   "name": "mediact/composer-file-installer",
   "description": "Install files with Composer.",
   "type": "library",
-  "license": "proprietary",
+  "license": "MIT",
   "prefer-stable": true,
   "minimum-stability": "stable",
   "authors": [
