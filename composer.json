@@ -15,12 +15,6 @@
       "role": "developer"
     }
   ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://composer.mediact.nl"
-    }
-  ],
   "require": {
     "php": "^7.0",
     "composer-plugin-api": "^1.1",
