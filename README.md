@@ -7,12 +7,12 @@ Install files in a project as part of a `composer install` or `composer update`.
 ```php
 <?php
 // Create a file mapping.
- $mappingFilePaths = new UnixFileMapping(
-      __DIR__ . '/../folder/files',
-      getcwd(),
-      ['./dir/one','./dir/two']
-      
-  );
+$mappingFilePaths = new UnixFileMapping(
+     __DIR__ . '/../folder/files',
+     getcwd(),
+     ['./dir/one','./dir/two']
+
+ );
 
 // Get a file mapping reader.
 $reader = new UnixFileMappingReader($sourceDirectory, $targetDirectory, $mappingFilePaths);
@@ -20,6 +20,6 @@ $reader = new UnixFileMappingReader($sourceDirectory, $targetDirectory, $mapping
 // Get an installer, supply with the file mapping reader.
 $installer = new FileInstaller($reader);
 
- // Install according to mapping, supply with Composer IOInterface.
- $installer->install($io);
+// Install according to mapping, supply with Composer IOInterface.
+$installer->install($io);
 ```
