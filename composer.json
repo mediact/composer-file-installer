@@ -23,7 +23,7 @@
   "require-dev": {
     "phpunit/phpunit": "@stable",
     "kint-php/kint": "@stable",
-    "mediact/testing-suite": "dev-feature/support-composer-v2",
+    "mediact/testing-suite": "@stable",
     "composer/composer": "@stable",
     "mikey179/vfsstream": "@stable"
   },
