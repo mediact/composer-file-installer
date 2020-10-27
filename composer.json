@@ -17,13 +17,13 @@
   ],
   "require": {
     "php": "^7.0",
-    "composer-plugin-api": "^1.1",
+    "composer-plugin-api": "^2.0",
     "mediact/file-mapping": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "@stable",
     "kint-php/kint": "@stable",
-    "mediact/testing-suite": "@stable",
+    "mediact/testing-suite": "dev-feature/support-composer-v2",
     "composer/composer": "@stable",
     "mikey179/vfsstream": "@stable"
   },
