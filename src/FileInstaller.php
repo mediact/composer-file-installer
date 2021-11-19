@@ -1,9 +1,17 @@
 <?php
-namespace Mediact\Composer;
+
+/**
+ * Copyright © Youwe. All rights reserved.
+ * https://www.youweagency.com
+ */
+
+declare(strict_types=1);
+
+namespace Youwe\Composer;
 
 use Composer\IO\IOInterface;
-use Mediact\FileMapping\FileMappingInterface;
-use Mediact\FileMapping\FileMappingReaderInterface;
+use Youwe\FileMapping\FileMappingInterface;
+use Youwe\FileMapping\FileMappingReaderInterface;
 use SplFileObject;
 
 class FileInstaller

@@ -1,49 +1,57 @@
 {
-  "name": "mediact/composer-file-installer",
-  "description": "Install files with Composer.",
-  "type": "library",
-  "license": "MIT",
-  "prefer-stable": true,
-  "minimum-stability": "stable",
-  "authors": [
-    {
-      "name": "MediaCT B.V.",
-      "email": "contact@mediact.nl"
+    "name": "youwe/composer-file-installer",
+    "description": "Install files with Composer.",
+    "type": "library",
+    "license": "MIT",
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Youwe B.V.",
+            "email": "contact@youweagency.com"
+        },
+        {
+            "name": "Jan-Marten de Boer",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "mediact/file-mapping": "dev-feature/OTPBBBBBZP-117"
     },
-    {
-      "name": "Jan-Marten de Boer",
-      "role": "developer"
+    "require-dev": {
+        "phpunit/phpunit": "@stable",
+        "kint-php/kint": "@stable",
+        "composer/composer": "@stable",
+        "mikey179/vfsstream": "@stable"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/file-mapping"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/YouweGit/testing-suite"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Youwe\\Composer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Youwe\\Composer\\Tests\\": "tests"
+        }
+    },
+    "archive": {
+        "exclude": [
+            "tests",
+            "phpcs.xml",
+            "phpmd.xml",
+            "phpunit.xml",
+            ".gitignore"
+        ]
     }
-  ],
-  "require": {
-    "php": "^7.0",
-    "mediact/file-mapping": "^1.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "@stable",
-    "kint-php/kint": "@stable",
-    "mediact/testing-suite": "@stable",
-    "composer/composer": "@stable",
-    "mikey179/vfsstream": "@stable"
-  },
-  "autoload": {
-    "psr-4": {
-      "Mediact\\Composer\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Mediact\\Composer\\Tests\\": "tests"
-    }
-  },
-  "archive": {
-    "exclude": [
-      "tests",
-      "phpcs.xml",
-      "phpmd.xml",
-      "phpunit.xml",
-      "bitbucket-pipelines.yml",
-      ".gitignore"
-    ]
-  }
 }

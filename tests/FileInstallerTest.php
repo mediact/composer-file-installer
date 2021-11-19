@@ -1,21 +1,24 @@
 <?php
+
 /**
- * Copyright MediaCT. All rights reserved.
- * https://www.mediact.nl
+ * Copyright © Youwe. All rights reserved.
+ * https://www.youweagency.com
  */
 
-namespace Mediact\Composer\Tests;
+declare(strict_types=1);
+
+namespace Youwe\Composer\Tests;
 
 use Composer\IO\IOInterface;
-use Mediact\FileMapping\FileMappingInterface;
-use Mediact\FileMapping\FileMappingReaderInterface;
+use Youwe\FileMapping\FileMappingInterface;
+use Youwe\FileMapping\FileMappingReaderInterface;
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
 use PHPUnit_Framework_MockObject_MockObject;
-use Mediact\Composer\FileInstaller;
+use Youwe\Composer\FileInstaller;
 
 /**
- * @coversDefaultClass \MediaCT\Composer\FileInstaller
+ * @coversDefaultClass \Youwe\Composer\FileInstaller
  */
 class FileInstallerTest extends TestCase
 {
