@@ -1,6 +1,6 @@
 # composer-file-installer
 Install files in a project as part of a `composer install` or `composer update`. 
-Uses the [mediact/file-mapping](https://github.com/mediact/file-mapping) package for moving files according to 
+Uses the [youwe/file-mapping](https://github.com/YouweGit/file-mapping) package for moving files according to 
 a source -> destination mapping. The Composer `IOInterface` supplies the file installer with the capability to 
 write the files and supply end-users with output messages.
 
