@@ -5,6 +5,7 @@
   "license": "MIT",
   "prefer-stable": true,
   "minimum-stability": "stable",
+  "abandoned": "youwe/composer-file-installer",
   "authors": [
     {
       "name": "MediaCT B.V.",
